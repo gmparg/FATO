@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.com/FATO/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.example.com/FATO/">
+    <Prefix name="" IRI="http://www.example.com/FAMO/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl</Import>
+    <Import>https://ns.gs1.org/gpc/</Import>
+    <Import>https://ref.gs1.org/epcis/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Food Allergens Traceability Ontology (FATO)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://schema.org/Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Allergen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AllergenSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AllergenTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CleaningAndSegregation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Cross-contactSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FoodAllergenManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LabelClaim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NutritionInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://gs1.org/voc/ProductBatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDeclaration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFinalPackSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasHeadOffice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPrimaryPackingSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSupplier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="includesClaim"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="introduces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isManufacturedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ofProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="rawMaterialFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="relatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="testedThrough"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="avgQuantityPer100g"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="avgQuantityPerServing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="calculationMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasAppearance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasAveragePercentageUK"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCompanyRegNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasConclusion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasContactPerson"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasFrequency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMaxShelfLife"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMaxStorageTemp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMinStorageTemp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMinimumPercentageUK"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasNameCompany"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasTelephone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="identifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="identifiedByBatch"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="nutrient"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="percentageDailyIntake"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="testMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="AllergenTest"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CleaningAndSegregation"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="contains"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDeclaration"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFinalPackSite"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasIngredient"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPrimaryPackingSite"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSource"/>
+        <Class IRI="Allergen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSupplier"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="includes"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="includesClaim"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="introduces"/>
+        <Class IRI="CleaningAndSegregation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isManufacturedAt"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ofProduct"/>
+        <Class IRI="https://gs1.org/voc/ProductBatch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="rawMaterialFrom"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="relatedTo"/>
+        <Class IRI="LabelClaim"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="testedThrough"/>
+        <Class IRI="Allergen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="https://ns.gs1.org/gpc/50000000"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="contains"/>
+        <Class IRI="Allergen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDeclaration"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFinalPackSite"/>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasHeadOffice"/>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIngredient"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPrimaryPackingSite"/>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSource"/>
+        <Class IRI="AllergenSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSupplier"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="includes"/>
+        <Class IRI="NutritionInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="includesClaim"/>
+        <Class IRI="LabelClaim"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="introduces"/>
+        <Class IRI="Cross-contactSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isManufacturedAt"/>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ofProduct"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="rawMaterialFrom"/>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="relatedTo"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FOODON_03510032"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="testedThrough"/>
+        <Class IRI="AllergenTest"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasEmail"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="avgQuantityPer100g"/>
+        <Class IRI="NutritionInformation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="avgQuantityPerServing"/>
+        <Class IRI="NutritionInformation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="calculationMethod"/>
+        <Class IRI="NutritionInformation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasAppearance"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasAveragePercentageUK"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCompanyRegNumber"/>
+        <Class IRI="http://schema.org/Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasConclusion"/>
+        <Class IRI="AllergenTest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasContactPerson"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDescription"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasEmail"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasFrequency"/>
+        <Class IRI="AllergenTest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMaxShelfLife"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMaxStorageTemp"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMethod"/>
+        <Class IRI="AllergenTest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMinStorageTemp"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMinimumPercentageUK"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasTelephone"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasType"/>
+        <Class IRI="Allergen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="identifiedBy"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="identifiedByBatch"/>
+        <Class IRI="https://gs1.org/voc/ProductBatch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="nutrient"/>
+        <Class IRI="NutritionInformation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="percentageDailyIntake"/>
+        <Class IRI="NutritionInformation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="testMethod"/>
+        <Class IRI="NutritionInformation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="avgQuantityPer100g"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="avgQuantityPerServing"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="calculationMethod"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasAppearance"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasAveragePercentageUK"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCompanyRegNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasConclusion"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasContactPerson"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasFrequency"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMaxStorageTemp"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMethod"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMinStorageTemp"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMinimumPercentageUK"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasNameCompany"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasTelephone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="identifiedBy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="identifiedByBatch"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="nutrient"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="percentageDailyIntake"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="testMethod"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
