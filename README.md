@@ -1,2 +1,2 @@
-# FAMO
-The Food Allergens Management Ontology
+# FATO
+The Food Allergens Traceability Ontology
