@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://ref.gs1.org/epcis/" uri="https://ref.gs1.org/standards/epcis/epcis-ontology.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl" uri="foodon_fooddatum.owl"/>
+    <uri id="User Entered Import Resolution" name="https://ns.gs1.org/gpc/" uri="GPC-FBT.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1664526970413" name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon_fooddatum.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1664526970413" name="http://www.example.com/FATO/" uri="FATO.owl"/>
+    </group>
+</catalog>
