@@ -26,6 +26,9 @@
         <Class IRI="Allergen"/>
     </Declaration>
     <Declaration>
+        <Class IRI="AllergenDeclaration"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AllergenSource"/>
     </Declaration>
     <Declaration>
@@ -35,10 +38,19 @@
         <Class IRI="CleaningAndSegregation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ConsumerGroup"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Cross-contactSource"/>
     </Declaration>
     <Declaration>
         <Class IRI="FoodAllergenManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Frequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ingredient"/>
     </Declaration>
     <Declaration>
         <Class IRI="LabelClaim"/>
@@ -48,6 +60,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="NutritionInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TestFrequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Traceability"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://gs1.org/voc/Organization"/>
@@ -62,7 +83,58 @@
         <Class IRI="https://gs1.org/voc/ProductBatch"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="CheckAllergenDerivatives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckCorrectIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckCrossContactAllergens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckDistributionCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckFoodAllergenDeclaration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckFoodLabel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckRecipeSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckUndeclaredAllergenAdditive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckUndeclaredAllergenImported"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckUndeclaredAllergenProcessing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckUndeclaredAllergenReworked"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CleaningStandardsAchieved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CleaningTimeSufficient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="IsIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="aboutProduct"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="concerns"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="contains"/>
@@ -86,7 +158,13 @@
         <ObjectProperty IRI="hasSource"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasState"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasSupplier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTestFrequency"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="includes"/>
@@ -101,7 +179,13 @@
         <ObjectProperty IRI="isManufacturedAt"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="isManufacturedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="isReportedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSuitableFor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="ofProduct"/>
@@ -113,7 +197,13 @@
         <ObjectProperty IRI="relatedTo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="specifies"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="testedThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="tracedThrough"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="avgQuantityPer100g"/>
@@ -125,13 +215,46 @@
         <DataProperty IRI="calculationMethod"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasAdvice"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasAppearance"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasAveragePercentageUK"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasBarcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCertificate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCodeFormat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCodeLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCodeTranslation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCodingMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasColour"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasCompanyRegNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCompoundIngredients"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasConclusion"/>
@@ -140,22 +263,43 @@
         <DataProperty IRI="hasContactPerson"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasDateCode"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasDescription"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasEmail"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasFrequency"/>
+        <DataProperty IRI="hasFax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasGTIN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasLotNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMaxPercentageInRecipe"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasMaxShelfLife"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMaxShelfLifeAfterOpening"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMaxShelfLifeFromPacking"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasMaxStorageTemp"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMinPercentageInRecipe"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasMinStorageTemp"/>
@@ -170,6 +314,36 @@
         <DataProperty IRI="hasNameCompany"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasNameNutrient"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasNumberOfCharacters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPackaging"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPercentageInRecipe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPercentageUK"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPhysicalDefects"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPostcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasStorageConditions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasStorageTemp"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasTelephone"/>
     </Declaration>
     <Declaration>
@@ -182,10 +356,124 @@
         <DataProperty IRI="identifiedByBatch"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="includesComments"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="includesCommentsAllergenManagement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isCompound"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isCooked"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isPrecautionary"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="percentageDailyIntake"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="testMethod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="About_half_the_time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Always"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Cleaning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Cleaning_process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Coeliac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Cross-contact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Elderly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Every_batch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Every_day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Every_month"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Every_week"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Fish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Food_additive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Halal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Imported_ingredients"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Infant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Kosher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Most_of_the_time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Never"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Occasionally"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Once_a_month"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Once_a_week"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Precautionary_declaration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Processing_aid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Segregation_process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Shared_container"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Shared_production_area"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Shared_production_line"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Shared_storage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Sometimes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Vegan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Ingredients_(not_imported)"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
@@ -197,16 +485,216 @@
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="AllergenTest"/>
-        <Class IRI="FoodAllergenManagement"/>
+        <Class IRI="TestFrequency"/>
+        <Class IRI="Frequency"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="CleaningAndSegregation"/>
-        <Class IRI="FoodAllergenManagement"/>
+        <Class IRI="https://gs1.org/voc/ProductBatch"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="About_half_the_time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="Always"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cross-contactSource"/>
+        <NamedIndividual IRI="Cleaning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Cleaning_process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ConsumerGroup"/>
+        <NamedIndividual IRI="Coeliac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Cross-contact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ConsumerGroup"/>
+        <NamedIndividual IRI="Elderly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="TestFrequency"/>
+        <NamedIndividual IRI="Every_batch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="TestFrequency"/>
+        <NamedIndividual IRI="Every_day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="TestFrequency"/>
+        <NamedIndividual IRI="Every_month"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="TestFrequency"/>
+        <NamedIndividual IRI="Every_week"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Fish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Food_additive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ConsumerGroup"/>
+        <NamedIndividual IRI="Halal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Imported_ingredients"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ConsumerGroup"/>
+        <NamedIndividual IRI="Infant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ConsumerGroup"/>
+        <NamedIndividual IRI="Kosher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="Most_of_the_time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="Never"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="Occasionally"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="Once_a_month"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="Once_a_week"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Precautionary_declaration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Processing_aid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Segregation_process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cross-contactSource"/>
+        <NamedIndividual IRI="Shared_container"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cross-contactSource"/>
+        <NamedIndividual IRI="Shared_production_area"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cross-contactSource"/>
+        <NamedIndividual IRI="Shared_production_line"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Cross-contactSource"/>
+        <NamedIndividual IRI="Shared_storage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Frequency"/>
+        <NamedIndividual IRI="Sometimes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ConsumerGroup"/>
+        <NamedIndividual IRI="Vegan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ConsumerGroup"/>
+        <NamedIndividual IRI="Vegetarian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AllergenSource"/>
+        <NamedIndividual IRI="Ingredients_(not_imported)"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CheckUndeclaredAllergenAdditive"/>
+        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CheckUndeclaredAllergenImported"/>
+        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CheckUndeclaredAllergenProcessing"/>
+        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="CheckUndeclaredAllergenReworked"/>
+        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckAllergenDerivatives"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckCorrectIngredient"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckCrossContactAllergens"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckDistributionCountry"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckFoodAllergenDeclaration"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckFoodLabel"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckRecipeSpecification"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CleaningStandardsAchieved"/>
+        <Class IRI="CleaningAndSegregation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CleaningTimeSufficient"/>
+        <Class IRI="CleaningAndSegregation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="IsIngredientOf"/>
+        <Class IRI="Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="aboutProduct"/>
+        <Class IRI="AllergenDeclaration"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="belongsTo"/>
         <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="concerns"/>
+        <Class IRI="AllergenDeclaration"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="contains"/>
@@ -221,6 +709,10 @@
         <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasHeadOffice"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasIngredient"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyDomain>
@@ -233,8 +725,16 @@
         <Class IRI="Allergen"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasState"/>
+        <Class IRI="Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasSupplier"/>
         <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTestFrequency"/>
+        <Class IRI="AllergenTest"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="includes"/>
@@ -253,8 +753,16 @@
         <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="isManufacturedBy"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="isReportedFor"/>
         <Class IRI="NutritionInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSuitableFor"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="ofProduct"/>
@@ -269,12 +777,72 @@
         <Class IRI="LabelClaim"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="specifies"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="testedThrough"/>
         <Class IRI="Allergen"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="tracedThrough"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckAllergenDerivatives"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckCorrectIngredient"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckCrossContactAllergens"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckDistributionCountry"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckFoodAllergenDeclaration"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckFoodLabel"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckRecipeSpecification"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CleaningStandardsAchieved"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CleaningTimeSufficient"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="IsIngredientOf"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="aboutProduct"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="belongsTo"/>
         <Class IRI="https://ns.gs1.org/gpc/50000000"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="concerns"/>
+        <Class IRI="Allergen"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="contains"/>
@@ -294,7 +862,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasIngredient"/>
-        <Class IRI="https://gs1.org/voc/Product"/>
+        <Class IRI="Ingredient"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasPrimaryPackingSite"/>
@@ -305,8 +873,16 @@
         <Class IRI="AllergenSource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasState"/>
+        <Class IRI="State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasSupplier"/>
         <Class IRI="https://gs1.org/voc/Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTestFrequency"/>
+        <Class IRI="TestFrequency"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="includes"/>
@@ -325,8 +901,16 @@
         <Class IRI="https://gs1.org/voc/Place"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="isManufacturedBy"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="isReportedFor"/>
         <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSuitableFor"/>
+        <Class IRI="ConsumerGroup"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="ofProduct"/>
@@ -341,12 +925,52 @@
         <Class IRI="http://purl.obolibrary.org/obo/FOODON_03510032"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="specifies"/>
+        <Class IRI="CleaningAndSegregation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="testedThrough"/>
         <Class IRI="AllergenTest"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="tracedThrough"/>
+        <Class IRI="Traceability"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasAveragePercentageUK"/>
+        <DataProperty IRI="hasPercentageUK"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasEmail"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMaxPercentageInRecipe"/>
+        <DataProperty IRI="hasPercentageInRecipe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMaxShelfLifeAfterOpening"/>
+        <DataProperty IRI="hasMaxShelfLife"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMaxShelfLifeFromPacking"/>
+        <DataProperty IRI="hasMaxShelfLife"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMaxStorageTemp"/>
+        <DataProperty IRI="hasStorageTemp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMinPercentageInRecipe"/>
+        <DataProperty IRI="hasPercentageInRecipe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMinStorageTemp"/>
+        <DataProperty IRI="hasStorageTemp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMinimumPercentageUK"/>
+        <DataProperty IRI="hasPercentageUK"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="avgQuantityPer100g"/>
@@ -361,16 +985,56 @@
         <Class IRI="Nutrient"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="hasAddress"/>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasAdvice"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="hasAppearance"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="hasAveragePercentageUK"/>
+        <DataProperty IRI="hasBarcode"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCertificate"/>
+        <Class IRI="AllergenTest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCode"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCodeFormat"/>
+        <Class IRI="Traceability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCodeLocation"/>
+        <Class IRI="Traceability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCodeTranslation"/>
+        <Class IRI="Traceability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCodingMethod"/>
+        <Class IRI="Traceability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasColour"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="hasCompanyRegNumber"/>
         <Class IRI="https://gs1.org/voc/Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCompoundIngredients"/>
+        <Class IRI="Ingredient"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="hasConclusion"/>
@@ -381,6 +1045,10 @@
         <Class IRI="https://gs1.org/voc/Organization"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="hasDateCode"/>
+        <Class IRI="Traceability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="hasDescription"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </DataPropertyDomain>
@@ -389,15 +1057,19 @@
         <Class IRI="https://gs1.org/voc/Organization"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="hasFrequency"/>
-        <Class IRI="AllergenTest"/>
+        <DataProperty IRI="hasFax"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="hasMaxShelfLife"/>
+        <DataProperty IRI="hasGTIN"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="hasMaxStorageTemp"/>
+        <DataProperty IRI="hasLotNumber"/>
+        <Class IRI="Traceability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMaxShelfLife"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -405,19 +1077,51 @@
         <Class IRI="AllergenTest"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="hasMinStorageTemp"/>
-        <Class IRI="https://gs1.org/voc/Product"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="hasMinimumPercentageUK"/>
-        <Class IRI="https://gs1.org/voc/Product"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="hasName"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasNameCompany"/>
+        <Class IRI="https://gs1.org/voc/Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasNameNutrient"/>
         <Class IRI="Nutrient"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="hasName"/>
+        <DataProperty IRI="hasNumberOfCharacters"/>
+        <Class IRI="Traceability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPackaging"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPercentageInRecipe"/>
+        <Class IRI="Ingredient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPercentageUK"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPhysicalDefects"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPostcode"/>
+        <Class IRI="https://gs1.org/voc/Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasProcess"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasStorageConditions"/>
+        <Class IRI="https://gs1.org/voc/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasStorageTemp"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -435,6 +1139,26 @@
     <DataPropertyDomain>
         <DataProperty IRI="identifiedByBatch"/>
         <Class IRI="https://gs1.org/voc/ProductBatch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="includesComments"/>
+        <Class IRI="AllergenDeclaration"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="includesCommentsAllergenManagement"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isCompound"/>
+        <Class IRI="Ingredient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isCooked"/>
+        <Class IRI="Ingredient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isPrecautionary"/>
+        <Class IRI="AllergenDeclaration"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="percentageDailyIntake"/>
@@ -457,15 +1181,55 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="hasAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasAdvice"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="hasAppearance"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="hasAveragePercentageUK"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <DataProperty IRI="hasBarcode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCertificate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCodeFormat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCodeLocation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCodeTranslation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCodingMethod"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasColour"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="hasCompanyRegNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCompoundIngredients"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -477,6 +1241,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="hasDateCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="hasDescription"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -485,7 +1253,15 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="hasFrequency"/>
+        <DataProperty IRI="hasFax"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasGTIN"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasLotNumber"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -493,20 +1269,8 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="hasMaxStorageTemp"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="hasMethod"/>
         <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="hasMinStorageTemp"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="hasMinimumPercentageUK"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="hasName"/>
@@ -515,6 +1279,46 @@
     <DataPropertyRange>
         <DataProperty IRI="hasNameCompany"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasNameNutrient"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasNumberOfCharacters"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPackaging"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPercentageInRecipe"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPercentageUK"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPhysicalDefects"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPostcode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasProcess"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasStorageConditions"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasStorageTemp"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="hasTelephone"/>
@@ -531,6 +1335,26 @@
     <DataPropertyRange>
         <DataProperty IRI="identifiedByBatch"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="includesComments"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="includesCommentsAllergenManagement"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isCompound"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isCooked"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isPrecautionary"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="percentageDailyIntake"/>
@@ -557,6 +1381,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+        <IRI>AllergenDeclaration</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483877"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
         <IRI>AllergenSource</IRI>
         <AnonymousIndividual nodeID="_:genid2147483862"/>
     </AnnotationAssertion>
@@ -572,6 +1401,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+        <IRI>ConsumerGroup</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483873"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
         <IRI>Cross-contactSource</IRI>
         <AnonymousIndividual nodeID="_:genid2147483833"/>
     </AnnotationAssertion>
@@ -579,6 +1413,16 @@
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
         <IRI>FoodAllergenManagement</IRI>
         <AnonymousIndividual nodeID="_:genid2147483835"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+        <IRI>Frequency</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483870"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+        <IRI>Ingredient</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483874"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
@@ -597,6 +1441,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+        <IRI>State</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483875"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+        <IRI>TestFrequency</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483876"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+        <IRI>Traceability</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483878"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
         <IRI>avgQuantityPerServing</IRI>
         <AnonymousIndividual nodeID="_:genid2147483756"/>
     </AnnotationAssertion>
@@ -604,16 +1463,6 @@
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
         <IRI>calculationMethod</IRI>
         <AnonymousIndividual nodeID="_:genid2147483749"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-        <IRI>hasAppearance</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483806"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-        <IRI>hasAveragePercentageUK</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483804"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
@@ -642,33 +1491,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-        <IRI>hasFrequency</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483869"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-        <IRI>hasMaxStorageTemp</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483797"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
         <IRI>hasMethod</IRI>
         <AnonymousIndividual nodeID="_:genid2147483864"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-        <IRI>hasMinStorageTemp</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483798"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-        <IRI>hasMinimumPercentageUK</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483795"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-        <IRI>hasName</IRI>
-        <AnonymousIndividual nodeID="_:genid2147483751"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
@@ -1308,6 +2132,126 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AnonymousIndividual nodeID="_:genid2147483869"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483870"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">253.9609301648368</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483870"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200.48128062893088</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483870"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483871"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">263.7366219851235</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483871"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">101.22571011899943</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483871"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483873"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">299.1069276201422</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483873"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">222.5785879126631</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483873"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483874"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">242.26451198278235</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483874"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">204.76747717380945</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483874"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483875"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">222.68280892956213</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483875"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">220.81976391154214</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483875"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483876"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">215.47524671862485</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483876"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">278.39601134506836</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483876"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483877"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">74.96475613813298</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483877"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">151.21615716853822</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483877"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483878"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">110.596280088242</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483878"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">234.13908599152708</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483878"/>
         <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
     </AnnotationAssertion>
 </Ontology>

@@ -1282,15 +1282,6 @@ Version 2.0 is a major release that adds JSON, JSONLD and RDF payload formats, s
     
 
 
-    <!-- http://www.example.com/FATO/hasAveragePercentageUK -->
-
-    <owl:DatatypeProperty rdf:about="http://www.example.com/FATO/hasAveragePercentageUK">
-        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.example.com/FATO/hasCompanyRegNumber -->
 
     <owl:DatatypeProperty rdf:about="http://www.example.com/FATO/hasCompanyRegNumber">
@@ -1344,15 +1335,6 @@ Version 2.0 is a major release that adds JSON, JSONLD and RDF payload formats, s
     
 
 
-    <!-- http://www.example.com/FATO/hasFrequency -->
-
-    <owl:DatatypeProperty rdf:about="http://www.example.com/FATO/hasFrequency">
-        <rdfs:domain rdf:resource="http://www.example.com/FATO/AllergenTest"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.example.com/FATO/hasMaxShelfLife -->
 
     <owl:DatatypeProperty rdf:about="http://www.example.com/FATO/hasMaxShelfLife">
@@ -1375,24 +1357,6 @@ Version 2.0 is a major release that adds JSON, JSONLD and RDF payload formats, s
     <owl:DatatypeProperty rdf:about="http://www.example.com/FATO/hasMethod">
         <rdfs:domain rdf:resource="http://www.example.com/FATO/AllergenTest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.example.com/FATO/hasMinStorageTemp -->
-
-    <owl:DatatypeProperty rdf:about="http://www.example.com/FATO/hasMinStorageTemp">
-        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.example.com/FATO/hasMinimumPercentageUK -->
-
-    <owl:DatatypeProperty rdf:about="http://www.example.com/FATO/hasMinimumPercentageUK">
-        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
