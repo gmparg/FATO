@@ -404,15 +404,6 @@ Version 2.0 is a major release that adds JSON, JSONLD and RDF payload formats, s
     
 
 
-    <!-- http://www.example.com/FATO/ofProduct -->
-
-    <owl:ObjectProperty rdf:about="http://www.example.com/FATO/ofProduct">
-        <rdfs:domain rdf:resource="https://gs1.org/voc/ProductBatch"/>
-        <rdfs:range rdf:resource="https://gs1.org/voc/Product"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.example.com/FATO/rawMaterialFrom -->
 
     <owl:ObjectProperty rdf:about="http://www.example.com/FATO/rawMaterialFrom">

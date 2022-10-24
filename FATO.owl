@@ -83,48 +83,6 @@
         <Class IRI="https://gs1.org/voc/ProductBatch"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="CheckAllergenDerivatives"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckCorrectIngredient"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckCrossContactAllergens"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckDistributionCountry"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckFoodAllergenDeclaration"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckFoodLabel"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckRecipeSpecification"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckUndeclaredAllergenAdditive"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckUndeclaredAllergenImported"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckUndeclaredAllergenProcessing"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckUndeclaredAllergenReworked"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CleaningStandardsAchieved"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="CleaningTimeSufficient"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="IsIngredientOf"/>
     </Declaration>
     <Declaration>
@@ -132,6 +90,48 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkAllergenDerivatives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkCorrectIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkCrossContactAllergens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkDistributionCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkFoodAllergenDeclaration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkFoodLabel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkRecipeSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkUndeclaredAllergenAdditive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkUndeclaredAllergenImported"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkUndeclaredAllergenProcessing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkUndeclaredAllergenReworked"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="checkUndeclaredAllergens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="cleaningStandardsAchieved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="cleaningTimeSufficient"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="concerns"/>
@@ -186,9 +186,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isSuitableFor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="ofProduct"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="rawMaterialFrom"/>
@@ -317,7 +314,7 @@
         <DataProperty IRI="hasNameNutrient"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasNumberOfCharacters"/>
+        <DataProperty IRI="hasNoOfCharacters"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasPackaging"/>
@@ -359,7 +356,7 @@
         <DataProperty IRI="includesComments"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="includesCommentsAllergenManagement"/>
+        <DataProperty IRI="includesCommentsManagement"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="isCompound"/>
@@ -625,61 +622,21 @@
         <NamedIndividual IRI="Ingredients_(not_imported)"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="CheckUndeclaredAllergenAdditive"/>
-        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+        <ObjectProperty IRI="checkUndeclaredAllergenAdditive"/>
+        <ObjectProperty IRI="checkUndeclaredAllergens"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="CheckUndeclaredAllergenImported"/>
-        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+        <ObjectProperty IRI="checkUndeclaredAllergenImported"/>
+        <ObjectProperty IRI="checkUndeclaredAllergens"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="CheckUndeclaredAllergenProcessing"/>
-        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+        <ObjectProperty IRI="checkUndeclaredAllergenProcessing"/>
+        <ObjectProperty IRI="checkUndeclaredAllergens"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="CheckUndeclaredAllergenReworked"/>
-        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
+        <ObjectProperty IRI="checkUndeclaredAllergenReworked"/>
+        <ObjectProperty IRI="checkUndeclaredAllergens"/>
     </SubObjectPropertyOf>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckAllergenDerivatives"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckCorrectIngredient"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckCrossContactAllergens"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckDistributionCountry"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckFoodAllergenDeclaration"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckFoodLabel"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckRecipeSpecification"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
-        <Class IRI="FoodAllergenManagement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CleaningStandardsAchieved"/>
-        <Class IRI="CleaningAndSegregation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="CleaningTimeSufficient"/>
-        <Class IRI="CleaningAndSegregation"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsIngredientOf"/>
         <Class IRI="Ingredient"/>
@@ -691,6 +648,46 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="belongsTo"/>
         <Class IRI="https://gs1.org/voc/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkAllergenDerivatives"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkCorrectIngredient"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkCrossContactAllergens"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkDistributionCountry"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkFoodAllergenDeclaration"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkFoodLabel"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkRecipeSpecification"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="checkUndeclaredAllergens"/>
+        <Class IRI="FoodAllergenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="cleaningStandardsAchieved"/>
+        <Class IRI="CleaningAndSegregation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="cleaningTimeSufficient"/>
+        <Class IRI="CleaningAndSegregation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="concerns"/>
@@ -765,10 +762,6 @@
         <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="ofProduct"/>
-        <Class IRI="https://gs1.org/voc/ProductBatch"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="rawMaterialFrom"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyDomain>
@@ -789,46 +782,6 @@
         <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckAllergenDerivatives"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckCorrectIngredient"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckCrossContactAllergens"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckDistributionCountry"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckFoodAllergenDeclaration"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckFoodLabel"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckRecipeSpecification"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CheckUndeclaredAllergens"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CleaningStandardsAchieved"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="CleaningTimeSufficient"/>
-        <Class IRI="Frequency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="IsIngredientOf"/>
         <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyRange>
@@ -839,6 +792,46 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="belongsTo"/>
         <Class IRI="https://ns.gs1.org/gpc/50000000"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkAllergenDerivatives"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkCorrectIngredient"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkCrossContactAllergens"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkDistributionCountry"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkFoodAllergenDeclaration"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkFoodLabel"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkRecipeSpecification"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="checkUndeclaredAllergens"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="cleaningStandardsAchieved"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="cleaningTimeSufficient"/>
+        <Class IRI="Frequency"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="concerns"/>
@@ -911,10 +904,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="isSuitableFor"/>
         <Class IRI="ConsumerGroup"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="ofProduct"/>
-        <Class IRI="https://gs1.org/voc/Product"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="rawMaterialFrom"/>
@@ -1089,7 +1078,7 @@
         <Class IRI="Nutrient"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="hasNumberOfCharacters"/>
+        <DataProperty IRI="hasNoOfCharacters"/>
         <Class IRI="Traceability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1145,7 +1134,7 @@
         <Class IRI="AllergenDeclaration"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="includesCommentsAllergenManagement"/>
+        <DataProperty IRI="includesCommentsManagement"/>
         <Class IRI="FoodAllergenManagement"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1285,7 +1274,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="hasNumberOfCharacters"/>
+        <DataProperty IRI="hasNoOfCharacters"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1341,7 +1330,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="includesCommentsAllergenManagement"/>
+        <DataProperty IRI="includesCommentsManagement"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
