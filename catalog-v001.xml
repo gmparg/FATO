@@ -4,7 +4,8 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl" uri="foodon_fooddatum.owl"/>
     <uri id="User Entered Import Resolution" name="https://ns.gs1.org/gpc/" uri="GPC-FBT.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1664526970413" name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon_fooddatum.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1664526970413" name="http://www.example.com/FATO/" uri="FATO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1671139037991" name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon_fooddatum.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1671139037991" name="http://www.example.com/FATO/" uri="FATO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1671139037991" name="http://www.example.org/FATO-Single/" uri="Merged/FATO-Single.owl"/>
     </group>
 </catalog>
