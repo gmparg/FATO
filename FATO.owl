@@ -206,6 +206,9 @@
         <ObjectProperty IRI="specifies"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="sufficientSegregation"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="testedThrough"/>
     </Declaration>
     <Declaration>
@@ -222,6 +225,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="calculationMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="checkAgainstSupply"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="checkCorrectIngredient"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="criticalControlPathway"/>
@@ -383,10 +392,16 @@
         <DataProperty IRI="includesCommentsManagement"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="isAdditive"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="isCompound"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="isCooked"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isDerivative"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="isImported"/>
@@ -396,6 +411,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="isPrecautionary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isReworked"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="labelDetails"/>
@@ -783,6 +801,10 @@
         <Class IRI="FoodAllergenManagement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="sufficientSegregation"/>
+        <Class IRI="CleaningAndSegregation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="testedThrough"/>
         <Class IRI="Allergen"/>
     </ObjectPropertyDomain>
@@ -931,6 +953,10 @@
         <Class IRI="CleaningAndSegregation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="sufficientSegregation"/>
+        <Class IRI="Frequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="testedThrough"/>
         <Class IRI="AllergenTest"/>
     </ObjectPropertyRange>
@@ -993,6 +1019,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="calculationMethod"/>
         <Class IRI="Nutrient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="checkAgainstSupply"/>
+        <Class IRI="AllergenDeclaration"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="checkCorrectIngredient"/>
+        <Class IRI="AllergenDeclaration"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="criticalControlPathway"/>
@@ -1171,12 +1205,20 @@
         <Class IRI="FoodAllergenManagement"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="isAdditive"/>
+        <Class IRI="Ingredient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="isCompound"/>
         <Class IRI="Ingredient"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="isCooked"/>
         <Class IRI="Ingredient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isDerivative"/>
+        <Class IRI="AllergenDeclaration"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="isImported"/>
@@ -1189,6 +1231,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="isPrecautionary"/>
         <Class IRI="AllergenDeclaration"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isReworked"/>
+        <Class IRI="Ingredient"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="labelDetails"/>
@@ -1217,6 +1263,14 @@
     <DataPropertyRange>
         <DataProperty IRI="calculationMethod"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="checkAgainstSupply"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="checkCorrectIngredient"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="criticalControlPathway"/>
@@ -1391,11 +1445,19 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="isAdditive"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="isCompound"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="isCooked"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isDerivative"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1408,6 +1470,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="isPrecautionary"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isReworked"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
