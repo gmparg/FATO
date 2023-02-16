@@ -1,0 +1,1690 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "https://ns.gs1.org/gpc/50350100"
+    },
+    "belongsTo" : {
+      "@id" : "http://www.example.com/FATO/belongsTo",
+      "@type" : "@id"
+    },
+    "recordTime" : {
+      "@id" : "https://ref.gs1.org/epcis/recordTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "checkCrossContactAllergens" : {
+      "@id" : "http://www.example.com/FATO/checkCrossContactAllergens",
+      "@type" : "@id"
+    },
+    "FOODON_03510272" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510272"
+    },
+    "bizTransactionList" : {
+      "@id" : "https://ref.gs1.org/epcis/bizTransactionList",
+      "@type" : "@id"
+    },
+    "FOODON_00003455" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003455"
+    },
+    "FOODON_03510206" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510206"
+    },
+    "SensorMetadata" : {
+      "@id" : "https://ref.gs1.org/epcis/SensorMetadata"
+    },
+    "FOODON_03510274" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510274"
+    },
+    "FOODON_03510076" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510076"
+    },
+    "EPCISDocumentBody" : {
+      "@id" : "https://ref.gs1.org/epcis/EPCISDocumentBody"
+    },
+    "hasEmail" : {
+      "@id" : "http://www.example.com/FATO/hasEmail",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510054" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510054"
+    },
+    "hasLotNumber" : {
+      "@id" : "http://www.example.com/FATO/hasLotNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510218" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510218"
+    },
+    "hasCode" : {
+      "@id" : "http://www.example.com/FATO/hasCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSynonym" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasSynonym"
+    },
+    "hasPackaging" : {
+      "@id" : "http://www.example.com/FATO/hasPackaging",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_00004054" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004054"
+    },
+    "FOODON_03510095" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510095"
+    },
+    "errorDeclaration" : {
+      "@id" : "https://ref.gs1.org/epcis/errorDeclaration",
+      "@type" : "@id"
+    },
+    "ProductBatch" : {
+      "@id" : "https://gs1.org/voc/ProductBatch"
+    },
+    "FOODON_03510104" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510104"
+    },
+    "measurementType" : {
+      "@id" : "https://ref.gs1.org/epcis/measurementType",
+      "@type" : "@id"
+    },
+    "AllergenDeclaration" : {
+      "@id" : "http://www.example.com/FATO/AllergenDeclaration"
+    },
+    "FOODON_03510115" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510115"
+    },
+    "FOODON_03510096" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510096"
+    },
+    "AllergenTest" : {
+      "@id" : "http://www.example.com/FATO/AllergenTest"
+    },
+    "FOODON_03510043" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510043"
+    },
+    "FOODON_03510123" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510123"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "FOODON_03510091" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510091"
+    },
+    "BTT" : {
+      "@id" : "https://ref.gs1.org/cbv/BTT"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "FOODON_03510247" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510247"
+    },
+    "FOODON_03530231" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530231"
+    },
+    "checkFoodLabel" : {
+      "@id" : "http://www.example.com/FATO/checkFoodLabel",
+      "@type" : "@id"
+    },
+    "FOODON_03510265" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510265"
+    },
+    "FOODON_03510239" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510239"
+    },
+    "FOODON_03510273" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510273"
+    },
+    "FOODON_03510149" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510149"
+    },
+    "includes" : {
+      "@id" : "http://www.example.com/FATO/includes",
+      "@type" : "@id"
+    },
+    "hasMaxPercentageInRecipe" : {
+      "@id" : "http://www.example.com/FATO/hasMaxPercentageInRecipe"
+    },
+    "FOODON_00003844" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003844"
+    },
+    "default-namespace" : {
+      "@id" : "http://purl.obolibrary.org/obo/foodon.owl#default-namespace"
+    },
+    "includesCommentsManagement" : {
+      "@id" : "http://www.example.com/FATO/includesCommentsManagement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510048" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510048"
+    },
+    "masterData" : {
+      "@id" : "https://ref.gs1.org/epcis/masterData",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "dataProcessingMethod" : {
+      "@id" : "https://ref.gs1.org/epcis/dataProcessingMethod",
+      "@type" : "@id"
+    },
+    "FOODON_03510072" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510072"
+    },
+    "hasExactSynonym" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+    },
+    "Allergen" : {
+      "@id" : "http://www.example.com/FATO/Allergen"
+    },
+    "FOODON_03510055" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510055"
+    },
+    "FOODON_03510194" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510194"
+    },
+    "FOODON_03510083" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510083"
+    },
+    "relatedTo" : {
+      "@id" : "http://www.example.com/FATO/relatedTo",
+      "@type" : "@id"
+    },
+    "Comp" : {
+      "@id" : "https://ref.gs1.org/cbv/Comp"
+    },
+    "FOODON_03530258" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530258"
+    },
+    "FOODON_03510061" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510061"
+    },
+    "FOODON_00003454" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003454"
+    },
+    "CleaningAndSegregation" : {
+      "@id" : "http://www.example.com/FATO/CleaningAndSegregation"
+    },
+    "hexBinaryValue" : {
+      "@id" : "https://ref.gs1.org/epcis/hexBinaryValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#hexBinary"
+    },
+    "FOODON_03510070" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510070"
+    },
+    "FOODON_03510085" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510085"
+    },
+    "FOODON_03510056" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510056"
+    },
+    "hasMaxStorageTemp" : {
+      "@id" : "http://www.example.com/FATO/hasMaxStorageTemp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasCodeFormat" : {
+      "@id" : "http://www.example.com/FATO/hasCodeFormat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "IAO_0000117" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000117"
+    },
+    "Organization" : {
+      "@id" : "http://schema.org/Organization"
+    },
+    "hasHeadOffice" : {
+      "@id" : "http://www.example.com/FATO/hasHeadOffice",
+      "@type" : "@id"
+    },
+    "epcisBody" : {
+      "@id" : "https://ref.gs1.org/epcis/epcisBody",
+      "@type" : "@id"
+    },
+    "unset" : {
+      "@id" : "https://ref.gs1.org/epcis/unset",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "FOODON_03510168" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510168"
+    },
+    "isCooked" : {
+      "@id" : "http://www.example.com/FATO/isCooked",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ErrorDeclaration" : {
+      "@id" : "https://ref.gs1.org/epcis/ErrorDeclaration"
+    },
+    "FOODON_03510245" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510245"
+    },
+    "hasNoOfCharacters" : {
+      "@id" : "http://www.example.com/FATO/hasNoOfCharacters",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "SensorElement" : {
+      "@id" : "https://ref.gs1.org/epcis/SensorElement"
+    },
+    "FOODON_03510114" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510114"
+    },
+    "isManufacturedBy" : {
+      "@id" : "http://www.example.com/FATO/isManufacturedBy",
+      "@type" : "@id"
+    },
+    "FOODON_03510129" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510129"
+    },
+    "Product" : {
+      "@id" : "https://gs1.org/voc/Product"
+    },
+    "EPCISDocument" : {
+      "@id" : "https://ref.gs1.org/epcis/EPCISDocument"
+    },
+    "FOODON_03510195" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510195"
+    },
+    "FOODON_03510121" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510121"
+    },
+    "ObjectEvent" : {
+      "@id" : "https://ref.gs1.org/epcis/ObjectEvent"
+    },
+    "jsonldLabel" : {
+      "@id" : "https://ref.gs1.org/epcis/jsonldLabel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510049" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510049"
+    },
+    "hasName" : {
+      "@id" : "http://www.example.com/FATO/hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "transformationID" : {
+      "@id" : "https://ref.gs1.org/epcis/transformationID",
+      "@type" : "@id"
+    },
+    "FOODON_03530245" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530245"
+    },
+    "FOODON_03510197" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510197"
+    },
+    "FOODON_03510200" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510200"
+    },
+    "FOODON_03510237" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510237"
+    },
+    "FOODON_03510162" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510162"
+    },
+    "hasDateCode" : {
+      "@id" : "http://www.example.com/FATO/hasDateCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SensorDevice" : {
+      "@id" : "https://gs1.org/voc/SensorDevice"
+    },
+    "FOODON_03530223" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530223"
+    },
+    "entityPositionX" : {
+      "@id" : "http://ontologydesignpatterns.org/opla-sd#entityPositionX"
+    },
+    "FOODON_03530257" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530257"
+    },
+    "FOODON_03530239" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530239"
+    },
+    "FOODON_03510120" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510120"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "checkDistributionCountry" : {
+      "@id" : "http://www.example.com/FATO/checkDistributionCountry",
+      "@type" : "@id"
+    },
+    "FOODON_00004061" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004061"
+    },
+    "sDev" : {
+      "@id" : "https://ref.gs1.org/epcis/sDev",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasBarcode" : {
+      "@id" : "http://www.example.com/FATO/hasBarcode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SensorAlertType" : {
+      "@id" : "https://gs1.org/voc/SensorAlertType"
+    },
+    "FOODON_03530238" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530238"
+    },
+    "FOODON_03510230" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510230"
+    },
+    "FOODON_03530255" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530255"
+    },
+    "FOODON_03510057" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510057"
+    },
+    "FOODON_03510036" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510036"
+    },
+    "FOODON_03510225" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510225"
+    },
+    "TransactionEvent" : {
+      "@id" : "https://ref.gs1.org/epcis/TransactionEvent"
+    },
+    "hasContactPerson" : {
+      "@id" : "http://www.example.com/FATO/hasContactPerson",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "testedThrough" : {
+      "@id" : "http://www.example.com/FATO/testedThrough",
+      "@type" : "@id"
+    },
+    "inputEPCList" : {
+      "@id" : "https://ref.gs1.org/epcis/inputEPCList",
+      "@type" : "@id"
+    },
+    "FOODON_03510202" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510202"
+    },
+    "FOODON_03510105" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510105"
+    },
+    "FOODON_03530242" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530242"
+    },
+    "hasCompanyRegNumber" : {
+      "@id" : "http://www.example.com/FATO/hasCompanyRegNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510212" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510212"
+    },
+    "cleaningStandardsAchieved" : {
+      "@id" : "http://www.example.com/FATO/cleaningStandardsAchieved",
+      "@type" : "@id"
+    },
+    "FOODON_03530254" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530254"
+    },
+    "sourceOrDestinationType" : {
+      "@id" : "https://ref.gs1.org/epcis/sourceOrDestinationType",
+      "@type" : "@id"
+    },
+    "jsonldUriLabel" : {
+      "@id" : "https://ref.gs1.org/epcis/jsonldUriLabel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "domainIncludes" : {
+      "@id" : "http://schema.org/domainIncludes"
+    },
+    "hasColour" : {
+      "@id" : "http://www.example.com/FATO/hasColour",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAddress" : {
+      "@id" : "http://www.example.com/FATO/hasAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510170" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510170"
+    },
+    "FOODON_03510017" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510017"
+    },
+    "hasCertificate" : {
+      "@id" : "http://www.example.com/FATO/hasCertificate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "checkRecipeSpecification" : {
+      "@id" : "http://www.example.com/FATO/checkRecipeSpecification",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasMinimumPercentageUK" : {
+      "@id" : "http://www.example.com/FATO/hasMinimumPercentageUK"
+    },
+    "hasSupplier" : {
+      "@id" : "http://www.example.com/FATO/hasSupplier",
+      "@type" : "@id"
+    },
+    "FOODON_03530237" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530237"
+    },
+    "contains" : {
+      "@id" : "http://www.example.com/FATO/contains",
+      "@type" : "@id"
+    },
+    "FOODON_03530227" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530227"
+    },
+    "hasTelephone" : {
+      "@id" : "http://www.example.com/FATO/hasTelephone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510277" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510277"
+    },
+    "FOODON_03510133" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510133"
+    },
+    "hasMinPercentageInRecipe" : {
+      "@id" : "http://www.example.com/FATO/hasMinPercentageInRecipe"
+    },
+    "SensorReport" : {
+      "@id" : "https://ref.gs1.org/epcis/SensorReport"
+    },
+    "eventTimeZoneOffset" : {
+      "@id" : "https://ref.gs1.org/epcis/eventTimeZoneOffset",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03530249" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530249"
+    },
+    "Ingredient" : {
+      "@id" : "http://www.example.com/FATO/Ingredient"
+    },
+    "FOODON_03510088" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510088"
+    },
+    "AssociationEvent" : {
+      "@id" : "https://ref.gs1.org/epcis/AssociationEvent"
+    },
+    "FOODON_03510062" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510062"
+    },
+    "component" : {
+      "@id" : "https://ref.gs1.org/epcis/component"
+    },
+    "FOODON_03510181" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510181"
+    },
+    "FOODON_00002886" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00002886"
+    },
+    "FOODON_03530244" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530244"
+    },
+    "cleaningTimeSufficient" : {
+      "@id" : "http://www.example.com/FATO/cleaningTimeSufficient",
+      "@type" : "@id"
+    },
+    "hasPhysicalDefects" : {
+      "@id" : "http://www.example.com/FATO/hasPhysicalDefects",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510112" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510112"
+    },
+    "hasMaxShelfLifeAfterOpening" : {
+      "@id" : "http://www.example.com/FATO/hasMaxShelfLifeAfterOpening"
+    },
+    "FOODON_03510193" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510193"
+    },
+    "tracedThrough" : {
+      "@id" : "http://www.example.com/FATO/tracedThrough",
+      "@type" : "@id"
+    },
+    "isManufacturedAt" : {
+      "@id" : "http://www.example.com/FATO/isManufacturedAt",
+      "@type" : "@id"
+    },
+    "FOODON_03510041" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510041"
+    },
+    "exception" : {
+      "@id" : "https://ref.gs1.org/epcis/exception",
+      "@type" : "@id"
+    },
+    "FOODON_03510232" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510232"
+    },
+    "FOODON_03510097" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510097"
+    },
+    "correctiveEventIDs" : {
+      "@id" : "https://ref.gs1.org/epcis/correctiveEventIDs",
+      "@type" : "@id"
+    },
+    "FOODON_03530236" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530236"
+    },
+    "FOODON_03510178" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510178"
+    },
+    "FOODON_03510108" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510108"
+    },
+    "FOODON_03510099" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510099"
+    },
+    "FOODON_03530232" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530232"
+    },
+    "hasConclusion" : {
+      "@id" : "http://www.example.com/FATO/hasConclusion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "percentageDailyIntake" : {
+      "@id" : "http://www.example.com/FATO/percentageDailyIntake",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "FOODON_03530250" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530250"
+    },
+    "MasterData" : {
+      "@id" : "https://ref.gs1.org/epcis/MasterData"
+    },
+    "FOODON_03510223" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510223"
+    },
+    "IndividualObject" : {
+      "@id" : "https://gs1.org/voc/IndividualObject"
+    },
+    "introduces" : {
+      "@id" : "http://www.example.com/FATO/introduces",
+      "@type" : "@id"
+    },
+    "FOODON_03510045" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510045"
+    },
+    "maxValue" : {
+      "@id" : "https://ref.gs1.org/epcis/maxValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "QuantityElement" : {
+      "@id" : "https://ref.gs1.org/epcis/QuantityElement"
+    },
+    "FOODON_03510173" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510173"
+    },
+    "FOODON_03530256" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530256"
+    },
+    "FOODON_03510257" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510257"
+    },
+    "MeasurementType" : {
+      "@id" : "https://gs1.org/voc/MeasurementType"
+    },
+    "hasMinStorageTemp" : {
+      "@id" : "http://www.example.com/FATO/hasMinStorageTemp"
+    },
+    "FOODON_03530228" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530228"
+    },
+    "concerns" : {
+      "@id" : "http://www.example.com/FATO/concerns",
+      "@type" : "@id"
+    },
+    "FOODON_03510065" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510065"
+    },
+    "FOODON_03510059" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510059"
+    },
+    "FOODON_03510180" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510180"
+    },
+    "IAO_0000118" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000118"
+    },
+    "deviceMetadata" : {
+      "@id" : "https://ref.gs1.org/epcis/deviceMetadata",
+      "@type" : "@id"
+    },
+    "FOODON_00004062" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004062"
+    },
+    "testMethod" : {
+      "@id" : "http://www.example.com/FATO/testMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510159" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510159"
+    },
+    "FOODON_03510154" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510154"
+    },
+    "meanValue" : {
+      "@id" : "https://ref.gs1.org/epcis/meanValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "deviceID" : {
+      "@id" : "https://ref.gs1.org/epcis/deviceID",
+      "@type" : "@id"
+    },
+    "bizStep" : {
+      "@id" : "https://ref.gs1.org/epcis/bizStep",
+      "@type" : "@id"
+    },
+    "checkUndeclaredAllergenProcessing" : {
+      "@id" : "http://www.example.com/FATO/checkUndeclaredAllergenProcessing",
+      "@type" : "@id"
+    },
+    "FOODON_03510077" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510077"
+    },
+    "persistentDisposition" : {
+      "@id" : "https://ref.gs1.org/epcis/persistentDisposition",
+      "@type" : "@id"
+    },
+    "FOODON_03530230" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530230"
+    },
+    "bizTransactionType" : {
+      "@id" : "https://ref.gs1.org/epcis/bizTransactionType",
+      "@type" : "@id"
+    },
+    "disposition" : {
+      "@id" : "https://ref.gs1.org/epcis/disposition",
+      "@type" : "@id"
+    },
+    "FOODON_03510243" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510243"
+    },
+    "hasNameCompany" : {
+      "@id" : "http://www.example.com/FATO/hasNameCompany",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "IAO_0000114" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000114"
+    },
+    "FOODON_03510111" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510111"
+    },
+    "FOODON_03510093" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510093"
+    },
+    "checkUndeclaredAllergens" : {
+      "@id" : "http://www.example.com/FATO/checkUndeclaredAllergens",
+      "@type" : "@id"
+    },
+    "FOODON_03510073" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510073"
+    },
+    "FOODON_03530233" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530233"
+    },
+    "hasType" : {
+      "@id" : "http://www.example.com/FATO/hasType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "childEPCs" : {
+      "@id" : "https://ref.gs1.org/epcis/childEPCs",
+      "@type" : "@id"
+    },
+    "hasTestFrequency" : {
+      "@id" : "http://www.example.com/FATO/hasTestFrequency",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "FOODON_03510236" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510236"
+    },
+    "hasSource" : {
+      "@id" : "http://www.example.com/FATO/hasSource",
+      "@type" : "@id"
+    },
+    "FOODON_03510066" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510066"
+    },
+    "name" : {
+      "@id" : "http://schema.org/name"
+    },
+    "hasFax" : {
+      "@id" : "http://www.example.com/FATO/hasFax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510033" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510033"
+    },
+    "FOODON_03530221" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530221"
+    },
+    "hasPercentageInRecipe" : {
+      "@id" : "http://www.example.com/FATO/hasPercentageInRecipe",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasCodeTranslation" : {
+      "@id" : "http://www.example.com/FATO/hasCodeTranslation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasProcess" : {
+      "@id" : "http://www.example.com/FATO/hasProcess",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDeclaration" : {
+      "@id" : "http://www.example.com/FATO/hasDeclaration",
+      "@type" : "@id"
+    },
+    "FOODON_03510231" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510231"
+    },
+    "avgQuantityPer100g" : {
+      "@id" : "http://www.example.com/FATO/avgQuantityPer100g",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "parentID" : {
+      "@id" : "https://ref.gs1.org/epcis/parentID",
+      "@type" : "@id"
+    },
+    "FOODON_03510153" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510153"
+    },
+    "FOODON_03510201" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510201"
+    },
+    "FOODON_03510150" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510150"
+    },
+    "value" : {
+      "@id" : "https://ref.gs1.org/epcis/value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "CertificationDetails" : {
+      "@id" : "https://gs1.org/voc/CertificationDetails"
+    },
+    "quantity" : {
+      "@id" : "https://ref.gs1.org/epcis/quantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "microorganism" : {
+      "@id" : "https://ref.gs1.org/epcis/microorganism",
+      "@type" : "@id"
+    },
+    "FOODON_03510102" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510102"
+    },
+    "rangeIncludes" : {
+      "@id" : "http://schema.org/rangeIncludes"
+    },
+    "IAO_0000119" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000119"
+    },
+    "hasMaxShelfLifeFromPacking" : {
+      "@id" : "http://www.example.com/FATO/hasMaxShelfLifeFromPacking"
+    },
+    "FOODON_00004059" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004059"
+    },
+    "startTime" : {
+      "@id" : "https://ref.gs1.org/epcis/startTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "FOODON_03510135" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510135"
+    },
+    "uriValue" : {
+      "@id" : "https://ref.gs1.org/epcis/uriValue",
+      "@type" : "@id"
+    },
+    "FOODON_03510235" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510235"
+    },
+    "FOODON_03530247" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530247"
+    },
+    "FOODON_00004057" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004057"
+    },
+    "sensorReport" : {
+      "@id" : "https://ref.gs1.org/epcis/sensorReport",
+      "@type" : "@id"
+    },
+    "FOODON_03510228" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510228"
+    },
+    "FOODON_03510234" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510234"
+    },
+    "FOODON_03510176" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510176"
+    },
+    "FOODON_03530246" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530246"
+    },
+    "FOODON_03510124" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510124"
+    },
+    "FOODON_03510221" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510221"
+    },
+    "eventList" : {
+      "@id" : "https://ref.gs1.org/epcis/eventList",
+      "@type" : "@id"
+    },
+    "BizTransaction" : {
+      "@id" : "https://ref.gs1.org/epcis/BizTransaction"
+    },
+    "FOODON_03510222" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510222"
+    },
+    "FOODON_03530226" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530226"
+    },
+    "FOODON_03510238" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510238"
+    },
+    "LabelClaim" : {
+      "@id" : "http://www.example.com/FATO/LabelClaim"
+    },
+    "FOODON_03510185" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510185"
+    },
+    "hasAdvice" : {
+      "@id" : "http://www.example.com/FATO/hasAdvice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03530086" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530086"
+    },
+    "FOODON_03510187" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510187"
+    },
+    "FOODON_03510094" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510094"
+    },
+    "certificationInfo" : {
+      "@id" : "https://ref.gs1.org/epcis/certificationInfo",
+      "@type" : "@id"
+    },
+    "FOODON_03510198" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510198"
+    },
+    "FOODON_03510039" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510039"
+    },
+    "FOODON_03530225" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530225"
+    },
+    "FOODON_03510182" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510182"
+    },
+    "FOODON_03510219" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510219"
+    },
+    "FOODON_03510125" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510125"
+    },
+    "action" : {
+      "@id" : "https://ref.gs1.org/epcis/action",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03530234" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530234"
+    },
+    "hasAppearance" : {
+      "@id" : "http://www.example.com/FATO/hasAppearance",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510134" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510134"
+    },
+    "ilmd" : {
+      "@id" : "https://ref.gs1.org/epcis/ilmd",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "instanceIdentifier" : {
+      "@id" : "https://ref.gs1.org/epcis/instanceIdentifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510184" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510184"
+    },
+    "Traceability" : {
+      "@id" : "http://www.example.com/FATO/Traceability"
+    },
+    "TransformationEvent" : {
+      "@id" : "https://ref.gs1.org/epcis/TransformationEvent"
+    },
+    "hasPrimaryPackingSite" : {
+      "@id" : "http://www.example.com/FATO/hasPrimaryPackingSite",
+      "@type" : "@id"
+    },
+    "FOODON_00004060" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004060"
+    },
+    "FOODON_03510037" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510037"
+    },
+    "receiver" : {
+      "@id" : "https://ref.gs1.org/epcis/receiver",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "includesClaim" : {
+      "@id" : "http://www.example.com/FATO/includesClaim",
+      "@type" : "@id"
+    },
+    "sourceOrDestination" : {
+      "@id" : "https://ref.gs1.org/epcis/sourceOrDestination",
+      "@type" : "@id"
+    },
+    "time" : {
+      "@id" : "https://ref.gs1.org/epcis/time",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "FOODON_03510167" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510167"
+    },
+    "Place" : {
+      "@id" : "https://gs1.org/voc/Place"
+    },
+    "coordinateReferenceSystem" : {
+      "@id" : "https://ref.gs1.org/epcis/coordinateReferenceSystem",
+      "@type" : "@id"
+    },
+    "sensorMetadata" : {
+      "@id" : "https://ref.gs1.org/epcis/sensorMetadata",
+      "@type" : "@id"
+    },
+    "FOODON_03510100" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510100"
+    },
+    "FOODON_03510042" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510042"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "percValue" : {
+      "@id" : "https://ref.gs1.org/epcis/percValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "FOODON_03510275" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510275"
+    },
+    "FOODON_03510177" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510177"
+    },
+    "FOODON_03510113" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510113"
+    },
+    "hasCodingMethod" : {
+      "@id" : "http://www.example.com/FATO/hasCodingMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NutritionInformation" : {
+      "@id" : "http://www.example.com/FATO/NutritionInformation"
+    },
+    "hasIngredient" : {
+      "@id" : "http://www.example.com/FATO/hasIngredient",
+      "@type" : "@id"
+    },
+    "FOODON_03510199" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510199"
+    },
+    "FOODON_03510098" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510098"
+    },
+    "FOODON_03510106" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510106"
+    },
+    "FOODON_03510271" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510271"
+    },
+    "FOODON_03510196" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510196"
+    },
+    "FOODON_03510074" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510074"
+    },
+    "FOODON_03510092" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510092"
+    },
+    "TestFrequency" : {
+      "@id" : "http://www.example.com/FATO/TestFrequency"
+    },
+    "hasStorageTemp" : {
+      "@id" : "http://www.example.com/FATO/hasStorageTemp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "FOODON_03510248" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510248"
+    },
+    "FOODON_03510087" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510087"
+    },
+    "FOODON_03510107" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510107"
+    },
+    "hasNameNutrient" : {
+      "@id" : "http://www.example.com/FATO/hasNameNutrient",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasStorageConditions" : {
+      "@id" : "http://www.example.com/FATO/hasStorageConditions",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510038" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510038"
+    },
+    "FOODON_03510103" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510103"
+    },
+    "childQuantityList" : {
+      "@id" : "https://ref.gs1.org/epcis/childQuantityList",
+      "@type" : "@id"
+    },
+    "percRank" : {
+      "@id" : "https://ref.gs1.org/epcis/percRank",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ILMD" : {
+      "@id" : "https://ref.gs1.org/epcis/ILMD"
+    },
+    "FOODON_03510090" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510090"
+    },
+    "FOODON_03530229" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530229"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "FOODON_03510186" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510186"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "FOODON_03510211" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510211"
+    },
+    "outputQuantityList" : {
+      "@id" : "https://ref.gs1.org/epcis/outputQuantityList",
+      "@type" : "@id"
+    },
+    "FOODON_03510226" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510226"
+    },
+    "FOODON_03510034" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510034"
+    },
+    "FOODON_03510242" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510242"
+    },
+    "declarationTime" : {
+      "@id" : "https://ref.gs1.org/epcis/declarationTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "FOODON_03510244" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510244"
+    },
+    "rawData" : {
+      "@id" : "https://ref.gs1.org/epcis/rawData",
+      "@type" : "@id"
+    },
+    "FOODON_03510116" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510116"
+    },
+    "FOODON_03510209" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510209"
+    },
+    "outputEPCList" : {
+      "@id" : "https://ref.gs1.org/epcis/outputEPCList",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "FOODON_03510035" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510035"
+    },
+    "FOODON_03530224" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530224"
+    },
+    "FOODON_03510224" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510224"
+    },
+    "FOODON_03510044" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510044"
+    },
+    "FOODON_03510128" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510128"
+    },
+    "uom" : {
+      "@id" : "https://ref.gs1.org/epcis/uom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510169" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510169"
+    },
+    "FOODON_03510183" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510183"
+    },
+    "FOODON_03510227" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510227"
+    },
+    "FOODON_03510179" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510179"
+    },
+    "FOODON_03510215" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510215"
+    },
+    "FOODON_03510204" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510204"
+    },
+    "sourceList" : {
+      "@id" : "https://ref.gs1.org/epcis/sourceList",
+      "@type" : "@id"
+    },
+    "FOODON_00003453" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003453"
+    },
+    "FOODON_03510080" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510080"
+    },
+    "FOODON_00004049" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004049"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "bizLocation" : {
+      "@id" : "https://ref.gs1.org/epcis/bizLocation",
+      "@type" : "@id"
+    },
+    "Frequency" : {
+      "@id" : "http://www.example.com/FATO/Frequency"
+    },
+    "checkCorrectIngredient" : {
+      "@id" : "http://www.example.com/FATO/checkCorrectIngredient",
+      "@type" : "@id"
+    },
+    "FOODON_03510249" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510249"
+    },
+    "FOODON_03530087" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530087"
+    },
+    "FOODON_03510205" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510205"
+    },
+    "FOODON_03510264" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510264"
+    },
+    "Disp" : {
+      "@id" : "https://ref.gs1.org/cbv/Disp"
+    },
+    "hasFinalPackSite" : {
+      "@id" : "http://www.example.com/FATO/hasFinalPackSite",
+      "@type" : "@id"
+    },
+    "FOODON_00004056" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004056"
+    },
+    "FOODON_03510233" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510233"
+    },
+    "reason" : {
+      "@id" : "https://ref.gs1.org/epcis/reason",
+      "@type" : "@id"
+    },
+    "FOODON_03510220" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510220"
+    },
+    "EPCISEvent" : {
+      "@id" : "https://ref.gs1.org/epcis/EPCISEvent"
+    },
+    "quantityList" : {
+      "@id" : "https://ref.gs1.org/epcis/quantityList",
+      "@type" : "@id"
+    },
+    "FOODON_03510023" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510023"
+    },
+    "isCompound" : {
+      "@id" : "http://www.example.com/FATO/isCompound",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "FOODON_03510174" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510174"
+    },
+    "AllergenSource" : {
+      "@id" : "http://www.example.com/FATO/AllergenSource"
+    },
+    "FOODON_03510122" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510122"
+    },
+    "hasState" : {
+      "@id" : "http://www.example.com/FATO/hasState",
+      "@type" : "@id"
+    },
+    "FOODON_03510214" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510214"
+    },
+    "FOODON_03510130" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510130"
+    },
+    "FOODON_03510152" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510152"
+    },
+    "set" : {
+      "@id" : "https://ref.gs1.org/epcis/set",
+      "@type" : "@id"
+    },
+    "isPrecautionary" : {
+      "@id" : "http://www.example.com/FATO/isPrecautionary",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "IAO_0000412" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000412"
+    },
+    "SDT" : {
+      "@id" : "https://ref.gs1.org/cbv/SDT"
+    },
+    "State" : {
+      "@id" : "http://www.example.com/FATO/State"
+    },
+    "endTime" : {
+      "@id" : "https://ref.gs1.org/epcis/endTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "SourceOrDestination" : {
+      "@id" : "https://ref.gs1.org/epcis/SourceOrDestination"
+    },
+    "identifiedBy" : {
+      "@id" : "http://www.example.com/FATO/identifiedBy",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510117" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510117"
+    },
+    "FOODON_03530235" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530235"
+    },
+    "FOODON_03510171" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510171"
+    },
+    "FOODON_03510172" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510172"
+    },
+    "FOODON_03510063" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510063"
+    },
+    "FOODON_00004053" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004053"
+    },
+    "FOODON_03510071" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510071"
+    },
+    "FOODON_03510119" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510119"
+    },
+    "FOODON_03510175" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510175"
+    },
+    "checkUndeclaredAllergenImported" : {
+      "@id" : "http://www.example.com/FATO/checkUndeclaredAllergenImported",
+      "@type" : "@id"
+    },
+    "FOODON_03530005" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530005"
+    },
+    "hasAveragePercentageUK" : {
+      "@id" : "http://www.example.com/FATO/hasAveragePercentageUK"
+    },
+    "inputQuantityList" : {
+      "@id" : "https://ref.gs1.org/epcis/inputQuantityList",
+      "@type" : "@id"
+    },
+    "avgQuantityper100g" : {
+      "@id" : "http://www.example.com/FATO/avgQuantityper100g",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "aboutProduct" : {
+      "@id" : "http://www.example.com/FATO/aboutProduct",
+      "@type" : "@id"
+    },
+    "entityPosition" : {
+      "@id" : "http://ontologydesignpatterns.org/opla-sd#entityPosition"
+    },
+    "hasMaxShelfLife" : {
+      "@id" : "http://www.example.com/FATO/hasMaxShelfLife",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ConsumerGroup" : {
+      "@id" : "http://www.example.com/FATO/ConsumerGroup"
+    },
+    "FOODON_00003446" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003446"
+    },
+    "readPoint" : {
+      "@id" : "https://ref.gs1.org/epcis/readPoint",
+      "@type" : "@id"
+    },
+    "FOODON_03510040" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510040"
+    },
+    "FOODON_03510203" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510203"
+    },
+    "FOODON_00004055" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004055"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "FOODON_03510069" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510069"
+    },
+    "FOODON_03510217" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510217"
+    },
+    "FOODON_03510032" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510032"
+    },
+    "IsIngredientOf" : {
+      "@id" : "http://www.example.com/FATO/IsIngredientOf",
+      "@type" : "@id"
+    },
+    "hasDbXref" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+    },
+    "FOODON_03510047" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510047"
+    },
+    "FoodAllergenManagement" : {
+      "@id" : "http://www.example.com/FATO/FoodAllergenManagement"
+    },
+    "hasCompoundIngredients" : {
+      "@id" : "http://www.example.com/FATO/hasCompoundIngredients",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sensorElementList" : {
+      "@id" : "https://ref.gs1.org/epcis/sensorElementList",
+      "@type" : "@id"
+    },
+    "FOODON_03510126" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510126"
+    },
+    "hasCodeLocation" : {
+      "@id" : "http://www.example.com/FATO/hasCodeLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510078" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510078"
+    },
+    "FOODON_03510268" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510268"
+    },
+    "FOODON_03530222" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530222"
+    },
+    "FOODON_00003452" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003452"
+    },
+    "includesComments" : {
+      "@id" : "http://www.example.com/FATO/includesComments",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "checkFoodAllergenDeclaration" : {
+      "@id" : "http://www.example.com/FATO/checkFoodAllergenDeclaration",
+      "@type" : "@id"
+    },
+    "FOODON_00003843" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003843"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "sender" : {
+      "@id" : "https://ref.gs1.org/epcis/sender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "epcList" : {
+      "@id" : "https://ref.gs1.org/epcis/epcList",
+      "@type" : "@id"
+    },
+    "FOODON_03510229" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510229"
+    },
+    "FOODON_03510161" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510161"
+    },
+    "epcClass" : {
+      "@id" : "https://ref.gs1.org/epcis/epcClass",
+      "@type" : "@id"
+    },
+    "FOODON_03510127" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510127"
+    },
+    "checkAllergenDerivatives" : {
+      "@id" : "http://www.example.com/FATO/checkAllergenDerivatives",
+      "@type" : "@id"
+    },
+    "FOODON_03510118" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510118"
+    },
+    "hasMethod" : {
+      "@id" : "http://www.example.com/FATO/hasMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "bizRules" : {
+      "@id" : "https://ref.gs1.org/epcis/bizRules",
+      "@type" : "@id"
+    },
+    "Nutrient" : {
+      "@id" : "http://www.example.com/FATO/Nutrient"
+    },
+    "BizStep" : {
+      "@id" : "https://ref.gs1.org/cbv/BizStep"
+    },
+    "checkUndeclaredAllergenAdditive" : {
+      "@id" : "http://www.example.com/FATO/checkUndeclaredAllergenAdditive",
+      "@type" : "@id"
+    },
+    "FOODON_00004058" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00004058"
+    },
+    "avgQuantityPerServing" : {
+      "@id" : "http://www.example.com/FATO/avgQuantityPerServing",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "FOODON_03510060" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510060"
+    },
+    "FOODON_03510213" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510213"
+    },
+    "PersistentDisposition" : {
+      "@id" : "https://ref.gs1.org/epcis/PersistentDisposition"
+    },
+    "hasDescription" : {
+      "@id" : "http://www.example.com/FATO/hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510246" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510246"
+    },
+    "minValue" : {
+      "@id" : "https://ref.gs1.org/epcis/minValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "FOODON_03510208" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510208"
+    },
+    "FOODON_03530248" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530248"
+    },
+    "rawMaterialFrom" : {
+      "@id" : "http://www.example.com/FATO/rawMaterialFrom",
+      "@type" : "@id"
+    },
+    "hasGTIN" : {
+      "@id" : "http://www.example.com/FATO/hasGTIN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_03510210" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510210"
+    },
+    "Cross-contactSource" : {
+      "@id" : "http://www.example.com/FATO/Cross-contactSource"
+    },
+    "destinationList" : {
+      "@id" : "https://ref.gs1.org/epcis/destinationList",
+      "@type" : "@id"
+    },
+    "AggregationEvent" : {
+      "@id" : "https://ref.gs1.org/epcis/AggregationEvent"
+    },
+    "FOODON_03530243" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530243"
+    },
+    "chemicalSubstance" : {
+      "@id" : "https://ref.gs1.org/epcis/chemicalSubstance",
+      "@type" : "@id"
+    },
+    "stringValue" : {
+      "@id" : "https://ref.gs1.org/epcis/stringValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FOODON_00003451" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_00003451"
+    },
+    "entityPositionY" : {
+      "@id" : "http://ontologydesignpatterns.org/opla-sd#entityPositionY"
+    },
+    "FOODON_03510131" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510131"
+    },
+    "Transformation" : {
+      "@id" : "https://ref.gs1.org/epcis/Transformation"
+    },
+    "eventTime" : {
+      "@id" : "https://ref.gs1.org/epcis/eventTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "ER" : {
+      "@id" : "https://ref.gs1.org/cbv/ER"
+    },
+    "FOODON_03530240" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530240"
+    },
+    "hasPostcode" : {
+      "@id" : "http://www.example.com/FATO/hasPostcode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "https://ns.gs1.org/gpc/description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "specifies" : {
+      "@id" : "http://www.example.com/FATO/specifies",
+      "@type" : "@id"
+    },
+    "FOODON_03510110" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510110"
+    },
+    "identifiedByBatch" : {
+      "@id" : "http://www.example.com/FATO/identifiedByBatch",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPercentageUK" : {
+      "@id" : "http://www.example.com/FATO/hasPercentageUK",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "FOODON_03530241" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03530241"
+    },
+    "FOODON_03510132" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510132"
+    },
+    "isSuitableFor" : {
+      "@id" : "http://www.example.com/FATO/isSuitableFor",
+      "@type" : "@id"
+    },
+    "vocabularyList" : {
+      "@id" : "https://ref.gs1.org/epcis/vocabularyList",
+      "@type" : "@id"
+    },
+    "isReportedFor" : {
+      "@id" : "http://www.example.com/FATO/isReportedFor",
+      "@type" : "@id"
+    },
+    "FOODON_03510216" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510216"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "FOODON_03510269" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510269"
+    },
+    "FOODON_03510075" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510075"
+    },
+    "FOODON_03510207" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510207"
+    },
+    "checkUndeclaredAllergenReworked" : {
+      "@id" : "http://www.example.com/FATO/checkUndeclaredAllergenReworked",
+      "@type" : "@id"
+    },
+    "epcisHeader" : {
+      "@id" : "https://ref.gs1.org/epcis/epcisHeader",
+      "@type" : "@id"
+    },
+    "FOODON_03510240" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510240"
+    },
+    "EPCISDocumentHeader" : {
+      "@id" : "https://ref.gs1.org/epcis/EPCISDocumentHeader"
+    },
+    "FOODON_03510241" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510241"
+    },
+    "calculationMethod" : {
+      "@id" : "http://www.example.com/FATO/calculationMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "booleanValue" : {
+      "@id" : "https://ref.gs1.org/epcis/booleanValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "FOODON_03510267" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510267"
+    },
+    "IAO_0000115" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+    },
+    "FOODON_03510270" : {
+      "@id" : "http://purl.obolibrary.org/obo/FOODON_03510270"
+    }
+  }
+}

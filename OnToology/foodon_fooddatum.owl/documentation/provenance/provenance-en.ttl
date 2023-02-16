@@ -1,0 +1,25 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl> a prov:Entity;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo :agent8;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Anoosha Sehar".
+:agent1 a prov:Agent; foaf:name "Damion Dooley".
+:agent2 a prov:Agent; foaf:name "Diane Alexander".
+:agent3 a prov:Agent; foaf:name "Emma Griffiths".
+:agent4 a prov:Agent; foaf:name "Gurinder Gosal".
+:agent5 a prov:Agent; foaf:name "Hande Küçük McGinty".
+:agent6 a prov:Agent; foaf:name "Lauren Chen".
+:agent7 a prov:Agent; foaf:name "Magalie Weber".
+:agent8 a prov:Agent; foaf:name "Rihannon Cameron".
