@@ -1,2 +1,2 @@
 # FATO
-The Food Allergens Traceability Ontology
+The Food Allergen Traceability Ontology
