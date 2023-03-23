@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1679597405410" name="http://www.w3id.org/FATO/" uri="FATO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1679597405410" name="shadowed:http://www.w3id.org/FATO/" uri="OnToology/FATO.owl/documentation/doc/ontology.rdf"/>
+    </group>
+</catalog>
