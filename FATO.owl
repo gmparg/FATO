@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.example.com/FATO/"
-     xml:base="http://www.example.com/FATO/"
+<rdf:RDF xmlns="http://www.w3id.org/FATO/"
+     xml:base="http://www.w3id.org/FATO/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:gpc="https://ns.gs1.org/gpc/"
@@ -17,9 +17,9 @@
      xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://www.w3id.org/FATO/">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl"/>
-        <owl:imports rdf:resource="https://ns.gs1.org/gpc/"/>
-        <owl:imports rdf:resource="https://ref.gs1.org/epcis/"/>
+        <owl:imports rdf:resource="https://selene.hud.ac.uk/scomgb/FATO/foodon_fooddatum.owl"/>
+        <owl:imports rdf:resource="https://selene.hud.ac.uk/scomgb/FATO/GPC-FBT.owl"/>
+        <owl:imports rdf:resource="https://ref.gs1.org/standards/epcis/epcis-ontology.ttl"/>
         <terms:creator>George Baryannis</terms:creator>
         <terms:creator>Lili Jia</terms:creator>
         <terms:description>Ontology capturing knowledge related to food allergen management and traceability.</terms:description>

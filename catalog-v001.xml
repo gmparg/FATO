@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://ns.gs1.org/gpc/" uri="https://selene.hud.ac.uk/scomgb/FATO/GPC-FBT.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl" uri="https://selene.hud.ac.uk/scomgb/FATO/foodon_fooddatum.owl"/>
-    <uri id="Imports Wizard Entry" name="https://ref.gs1.org/epcis/" uri="https://ref.gs1.org/standards/epcis/epcis-ontology.ttl"/>
-</catalog>
