@@ -1,0 +1,1893 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3id.org/FATO/"
+     xml:base="http://www.w3id.org/FATO/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.w3id.org/FATO/">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl"/>
+        <owl:imports rdf:resource="https://ns.gs1.org/gpc/"/>
+        <owl:imports rdf:resource="https://ref.gs1.org/standards/epcis/epcis-ontology.ttl"/>
+        <terms:creator>George Baryannis</terms:creator>
+        <terms:creator>Lili Jia</terms:creator>
+        <terms:description>Ontology capturing knowledge related to food allergen management and traceability.</terms:description>
+        <rdfs:label>Food Allergen Traceability Ontology (FATO)</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3id.org/FATO/IsIngredientOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/IsIngredientOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Ingredient"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/belongsTo">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="https://ns.gs1.org/gpc/50000000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkAllergenDerivatives -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkAllergenDerivatives">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkCorrectIngredient -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkCorrectIngredient">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/AllergenDeclaration"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkCrossContactAllergens -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkCrossContactAllergens">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkDistributionCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkDistributionCountry">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkFoodAllergenDeclaration -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkFoodAllergenDeclaration">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkFoodLabel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkFoodLabel">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkRecipeSpecification -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkRecipeSpecification">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkUndeclaredAllergenAdditive -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkUndeclaredAllergenAdditive">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/checkUndeclaredAllergens"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkUndeclaredAllergenImported -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkUndeclaredAllergenImported">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/checkUndeclaredAllergens"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkUndeclaredAllergenProcessing -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkUndeclaredAllergenProcessing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/checkUndeclaredAllergens"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkUndeclaredAllergenReworked -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkUndeclaredAllergenReworked">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/checkUndeclaredAllergens"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkUndeclaredAllergens -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/checkUndeclaredAllergens">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/cleaningStandardsAchieved -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/cleaningStandardsAchieved">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/CleaningAndSegregation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/cleaningTimeSufficient -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/cleaningTimeSufficient">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/CleaningAndSegregation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/concerns -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/concerns">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/AllergenDeclaration"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Allergen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasDeclaration -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasDeclaration">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasFinalPackSite -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasFinalPackSite">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasFrequency -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasFrequency">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Test"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasHeadOffice -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasHeadOffice">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Organization"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasIngredient -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasIngredient">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasPrimaryPackingSite -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasPrimaryPackingSite">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasSource">
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasState -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasState">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasSupplier -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasSupplier">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasTestFrequency -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/hasTestFrequency">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/AllergenTest"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/includes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/includes">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/NutritionInformation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Nutrient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/includesClaim -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/includesClaim">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/SpecialLabelClaim"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/isDocumentedFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/isDocumentedFor">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodSafety"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/isManufacturedAt -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/isManufacturedAt">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/isManufacturedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/isManufacturedBy">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/isReportedFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/isReportedFor">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/NutritionInformation"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/isSuitableFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/isSuitableFor">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/rawMaterialFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/rawMaterialFrom">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="https://gs1.org/voc/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/relatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/relatedTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/SpecialLabelClaim"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/FOODON_03510032"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/specifies -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/specifies">
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Allergen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/sufficientSegregation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/sufficientSegregation">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/CleaningAndSegregation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/testedThrough -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/testedThrough">
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/AllergenTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/tracedThrough -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/FATO/tracedThrough">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3id.org/FATO/HACCPplan -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/HACCPplan">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodSafety"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/avgQuantityPer100g -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/avgQuantityPer100g">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/avgQuantityPerServing -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/avgQuantityPerServing">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/calculationMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/calculationMethod">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkAgainstSupply -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/checkAgainstSupply">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/AllergenDeclaration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/checkCorrectIngredient -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/checkCorrectIngredient">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/criticalControlPathway -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/criticalControlPathway">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodSafety"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasAdditionalInformation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasAdditionalInformation">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasAddress -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasAddress">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasAdvice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasAdvice">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasAppearance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasAppearance">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasAveragePercentageUK -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasAveragePercentageUK">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasPercentageUK"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasBarcode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasBarcode">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCertificate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCertificate">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCode">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCodeFormat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCodeFormat">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCodeLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCodeLocation">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCodeTranslation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCodeTranslation">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCodingMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCodingMethod">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasColour -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasColour">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCompanyRegNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCompanyRegNumber">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCompoundIngredients -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCompoundIngredients">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasCompoundPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasCompoundPercentage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasPercentageInRecipe"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasConclusion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasConclusion">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasContactPerson -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasContactPerson">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasDateCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasDateCode">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasDescription">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasEmail -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasEmail">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasFax -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasFax">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasGTIN -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasGTIN">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasLotNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasLotNumber">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMaxPercentageInRecipe -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMaxPercentageInRecipe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasPercentageInRecipe"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMaxShelfLife -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMaxShelfLife">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMaxShelfLifeAfterOpening -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMaxShelfLifeAfterOpening">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasMaxShelfLife"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMaxShelfLifeFromPacking -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMaxShelfLifeFromPacking">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasMaxShelfLife"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMaxStorageTemp -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMaxStorageTemp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasStorageTemp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMethod">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMinPercentageInRecipe -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMinPercentageInRecipe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasPercentageInRecipe"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMinStorageTemp -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMinStorageTemp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasStorageTemp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasMinimumPercentageUK -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasMinimumPercentageUK">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/FATO/hasPercentageUK"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasName">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasNameCompany -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasNameCompany">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasNameNutrient -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasNameNutrient">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasNoOfCharacters -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasNoOfCharacters">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Traceability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasPackaging -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasPackaging">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasPercentageInRecipe -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasPercentageInRecipe">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasPercentageUK -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasPercentageUK">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasPhysicalDefects -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasPhysicalDefects">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasPostcode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasPostcode">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasProcess -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasProcess">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasStorageConditions -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasStorageConditions">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasStorageTemp -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasStorageTemp">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasTelephone -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasTelephone">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasTestType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasTestType">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/hasType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/hasType">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Allergen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/identifiedBy -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/identifiedBy">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/identifiedByBatch -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/identifiedByBatch">
+        <rdfs:domain rdf:resource="https://gs1.org/voc/ProductBatch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/includesComments -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/includesComments">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodAllergenManagement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/isCompound -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/isCompound">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/isCooked -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/isCooked">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/labelDetails -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/labelDetails">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/FoodSafety"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/percentageDailyIntake -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/percentageDailyIntake">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/FATO/testMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/FATO/testMethod">
+        <rdfs:domain rdf:resource="http://www.w3id.org/FATO/Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03510032 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03510032">
+        <opla-sd:entityPosition rdf:nodeID="genid15"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid15">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">700.2078190651155</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.45041571788579</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="http://schema.org/Organization">
+        <opla-sd:entityPosition rdf:nodeID="genid16"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid16">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">750.4634325659272</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1069.5022148526523</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Allergen -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/Allergen">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/AllergenDeclaration -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/AllergenDeclaration">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/AllergenTest -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/AllergenTest">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/FATO/Test"/>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/CleaningAndSegregation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/CleaningAndSegregation">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/ConsumerGroup -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/ConsumerGroup">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/FoodAllergenManagement -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/FoodAllergenManagement">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/FoodSafety -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/FoodSafety"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Frequency -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/Frequency">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Ingredient -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/Ingredient">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Nutrient -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/Nutrient">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/NutritionInformation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/NutritionInformation">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Source -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/Source">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/SpecialLabelClaim -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/SpecialLabelClaim">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/State -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/State">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Test -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/Test"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Traceability -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/FATO/Traceability">
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://gs1.org/voc/Organization -->
+
+
+    <owl:Class rdf:about="https://gs1.org/voc/Organization">
+        <opla-sd:entityPosition rdf:nodeID="genid31"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid31">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.36095032465482</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">560.3804383481042</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- https://gs1.org/voc/Place -->
+
+
+    <owl:Class rdf:about="https://gs1.org/voc/Place">
+        <opla-sd:entityPosition rdf:nodeID="genid32"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid32">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">539.6405304360053</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.558594101176482</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- https://gs1.org/voc/Product -->
+
+
+    <owl:Class rdf:about="https://gs1.org/voc/Product">
+        <opla-sd:entityPosition rdf:nodeID="genid33"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid33">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">379.91909335563605</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">479.8779383343359</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- https://gs1.org/voc/ProductBatch -->
+
+
+    <owl:Class rdf:about="https://gs1.org/voc/ProductBatch">
+        <rdfs:subClassOf rdf:resource="https://gs1.org/voc/Product"/>
+        <opla-sd:entityPosition rdf:nodeID="genid34"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid34">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.74993868656816</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">599.8487236158974</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- https://ns.gs1.org/gpc/50000000 -->
+
+
+    <owl:Class rdf:about="https://ns.gs1.org/gpc/50000000">
+        <opla-sd:entityPosition rdf:nodeID="genid35"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid35">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">569.575498784566</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">99.66495461459868</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3id.org/FATO/About_half_the_time -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/About_half_the_time"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Always -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Always"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Cleaning -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Cleaning">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Cleaning_process -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Cleaning_process"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Coeliac -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Coeliac">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Cross-contact -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Cross-contact"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Elderly -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Elderly">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Every_batch -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Every_batch">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Every_day -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Every_day">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Every_month -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Every_month">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Every_week -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Every_week">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Fish -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Fish"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Food_additive -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Food_additive"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Halal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Halal">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Imported_ingredients -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Imported_ingredients"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Infant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Infant">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Kosher -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Kosher">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Most_of_the_time -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Most_of_the_time"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Never -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Never"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Occasionally -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Occasionally"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Once_a_month -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Once_a_month"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Once_a_week -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Once_a_week"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Precautionary_declaration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Precautionary_declaration"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Processing_aid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Processing_aid"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Segregation_process -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Segregation_process"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Shared_container -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Shared_container">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Shared_production_area -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Shared_production_area">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Shared_production_line -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Shared_production_line">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Shared_storage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Shared_storage">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Sometimes -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Sometimes"/>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Vegan -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Vegan">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Vegetarian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Vegetarian">
+        <rdf:type rdf:resource="http://www.w3id.org/FATO/ConsumerGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/FATO/Ingredients_(not_imported) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/FATO/Ingredients_(not_imported)"/>
+    <rdf:Description rdf:nodeID="genid36">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">299.1069276201422</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">222.5785879126631</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid37">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">579.8366649352605</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">729.9717921532601</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid38">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.96475613813298</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">151.21615716853822</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid39">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">720.058002354556</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">380.32717810406996</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid40">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">559.7299058540725</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">49.53115157626769</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid41">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">242.26451198278235</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">204.76747717380945</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid42">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">253.9609301648368</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.48128062893088</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid43">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">580.2383614293777</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">930.2400647846891</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid44">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">789.6594649733531</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">960.0463615056614</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid45">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.905104177700423</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.1229328925283</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid46">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.437671834987782</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.1842660591828</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid47">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">800.1541450248591</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">480.10965237119615</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid48">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">689.981932404743</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.3049316366761</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid49">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">740.3608403653075</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">979.9995966281713</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid50">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.25034693228248</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.66184570672567</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid51">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.232430054152456</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.155951978224266</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid52">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.312482425080475</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">199.69091253265185</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid53">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">799.8577410720701</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">909.7524919226737</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid54">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">430.0444192096498</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.68810429432881</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid55">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">263.7366219851235</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">101.22571011899943</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid56">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">619.5322785520125</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">320.4022300490359</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid57">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">370.04109847115205</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.09572533654966</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid58">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">79.76825892418958</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">719.8355768676944</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid59">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.596280088242</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">234.13908599152708</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid60">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">650.1507938527745</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">649.8792592344944</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid61">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">215.47524671862485</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">278.39601134506836</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid62">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">790.2046546074491</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">759.7994744639001</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid63">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.70747853171065</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.117273274092</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid64">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">259.51038882137993</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.25589643619074</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid65">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">320.19739812481305</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">650.4723208788861</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid66">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">679.6070621289864</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">189.68305213518465</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid67">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">222.68280892956213</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">220.81976391154214</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid68">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">669.8282789946456</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">260.4003518256325</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid69">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.562842289033057</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">109.8492807415821</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid70">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">790.0846841592839</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">690.2865636128079</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid71">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">759.7875659396748</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1009.5365599414062</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid72">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">799.6443874901836</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">809.7921549233273</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid73">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">579.6942356855761</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">439.81971876304897</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid74">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">470.27390500985047</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">810.3265897789895</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid75">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">789.6479883974496</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">860.4366635087837</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
