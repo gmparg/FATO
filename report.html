@@ -3,6 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Visualisation</title>
+<link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="vocab/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function() 
+		    { 
+		    	$("#tablesorter-demo").tablesorter(); 
+		    	$("#tablesorter-demo").stickyTableHeaders(); 
+		    	$('[data-toggle="tooltip"]').tooltip(); 
+		    } 
+	    ); 
+    </script>
+
+    <!-- Le styles -->
+    <link href="vocab/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
   </head>
 
   <body>
