@@ -13,4 +13,5 @@ This repository contains the following files. Please also check out [https://gmp
 * LICENSE: the license of FATO
 * LICENSE (EPCIS and GPC): the license of EPCIS (imported by FATO) and GPC
 * CONTRIBUTING.md: information for contributing to FATO
+* CODE_OF_CONDUCT.md: code of conduct information for contributors
 * README.md: this file
