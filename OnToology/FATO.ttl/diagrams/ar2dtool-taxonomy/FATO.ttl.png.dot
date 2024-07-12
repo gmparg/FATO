@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Test" "gs1:Product" "gs1:ProductBatch" "base:AllergenTest" "epcis:AggregationEvent" "epcis:TransformationEvent" "epcis:EPCISEvent" "epcis:AssociationEvent" "epcis:TransactionEvent" "epcis:ObjectEvent" ; /*classes style*/
+	"epcis:ObjectEvent" -> "epcis:EPCISEvent" [ label = "rdfs:subClassOf" ];
+	"epcis:TransformationEvent" -> "epcis:EPCISEvent" [ label = "rdfs:subClassOf" ];
+	"epcis:TransactionEvent" -> "epcis:EPCISEvent" [ label = "rdfs:subClassOf" ];
+	"gs1:ProductBatch" -> "gs1:Product" [ label = "rdfs:subClassOf" ];
+	"base:AllergenTest" -> "base:Test" [ label = "rdfs:subClassOf" ];
+	"epcis:AssociationEvent" -> "epcis:EPCISEvent" [ label = "rdfs:subClassOf" ];
+	"epcis:AggregationEvent" -> "epcis:EPCISEvent" [ label = "rdfs:subClassOf" ];
+
+}
