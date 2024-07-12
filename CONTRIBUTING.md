@@ -12,8 +12,6 @@
   - [Best Practices](#best-practices)
     - [How to write great issues?](#how-to-write-great-issues)
     - [How to create a great pull/merge request?](#how-to-create-a-great-pullmerge-request)
-  - [RO mailing list](#ro-mailing-list)
-  - [RO working group meetings](#ro-working-group-meetings)
 
 ## Contributing to Food Allergen Traceability Ontology (FATO)
 
@@ -56,9 +54,6 @@ community resource, it is often necessary to do at least some of the work of add
 #### How to write a new term request
 
 Request a new term _via_ the GitHub [Issue Tracker](https://github.com/gmparg/FATO/issues).
-
-It is important to remember that it takes a lot of time for curators to process issues submitted to the tracker.
-To make this work easier, please always use issue templates if they are available (https://github.com/oborel/obo-relations/issues/new/choose).
 
 ### How to add a new term
 
