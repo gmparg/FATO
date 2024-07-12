@@ -2,9 +2,4 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl" uri="https://helios.hud.ac.uk/FATO/foodon_fooddatum.owl"/>
     <uri id="Imports Wizard Entry" name="https://ns.gs1.org/gpc/" uri="https://helios.hud.ac.uk/FATO/GPC-FBT.owl"/>
-    <uri id="User Entered Import Resolution" name="https://w3id.org/FATO/GPC-FBT.owl" uri="https://helios.hud.ac.uk/FATO/GPC-FBT.owl"/>
-    <uri id="User Entered Import Resolution" name="https://w3id.org/FATO/foodon_fooddatum.owl" uri="https://helios.hud.ac.uk/FATO/foodon_fooddatum.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1720005166135" name="http://www.w3id.org/FATO/" uri="FATO.owl"/>
-    </group>
 </catalog>
