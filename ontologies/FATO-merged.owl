@@ -34,6 +34,7 @@
         <terms:creator rdf:resource="https://gs1.org/"/>
         <terms:creator>George Baryannis</terms:creator>
         <terms:creator>Lili Jia</terms:creator>
+        <terms:creator>Emmanuel Papadakis</terms:creator>
         <terms:date>2022-02-01</terms:date>
         <terms:description xml:lang="en">FOODON</terms:description>
         <terms:description xml:lang="en">Food Ontology (food datum subset)</terms:description>
@@ -25473,6 +25474,7 @@ When events share the same Transformation, the meaning is that the inputs to any
  Excludes products such as Teas, Herbal Fruit Infusions/Tisanes Bags or Loose, Liquid Ready to Drink and Not Ready to Drink Herbal Fruit Infusions/Tisanes and Herbal Fruit Infusions/Tisanes Instant. Also excludes products such as capsules, discs, pads, pods or tablets that contain only chocolate or coffee to be used in espresso machines.</rdfs:comment>
         <rdfs:label>10008186 - Fruit Herbal Infusions/Tisanes - Capsules/Pods</rdfs:label>
         <gpc:description>Includes any products that can be described/observed as an infusion of dried fruits, herbs, spices and flowers, which have been prepared for use with percolators, cafetieres and filters. Includes Fruit Herbal Infusions/Tisanes discs, capsules, pads, pods and tablets. These products are prepared for consumption by the addition of by the addition of hot water and/or milk.
+
  Excludes products such as Teas, Herbal Fruit Infusions/Tisanes Bags or Loose, Liquid Ready to Drink and Not Ready to Drink Herbal Fruit Infusions/Tisanes and Herbal Fruit Infusions/Tisanes Instant. Also excludes products such as capsules, discs, pads, pods or tablets that contain only chocolate or coffee to be used in espresso machines.</gpc:description>
     </rdf:Description>
     <rdf:Description rdf:about="https://ns.gs1.org/gpc/10008187">
