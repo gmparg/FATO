@@ -1,6 +1,6 @@
 # FATO: The Food Allergen Traceability Ontology
 
-This repository contains the following files. Please also check out [https://gmparg.github.io/FATO](https://gmparg.github.io/FATO)
+This repository contains the following files. Please also check out [https://gmparg.github.io/FATO](https://gmparg.github.io/FATO) for a more visual representation.
 
 * FATO.owl: the latest version of FATO in RDF/XML syntax
 * FATO.tt: the latest version of FATO in Turtle syntax
