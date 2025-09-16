@@ -22,6 +22,7 @@
         <owl:imports rdf:resource="https://ref.gs1.org/standards/epcis/epcis-ontology.ttl"/>
         <terms:creator>George Baryannis</terms:creator>
         <terms:creator>Lili Jia</terms:creator>
+        <terms:creator>Emmanuel Papadakis</terms:creator>
         <terms:description>Ontology capturing knowledge related to food allergen management and traceability.</terms:description>
         <rdfs:label>Food Allergen Traceability Ontology (FATO)</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
