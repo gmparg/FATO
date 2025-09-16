@@ -21,7 +21,8 @@
                                          gpc: ,
                                          <https://ref.gs1.org/standards/epcis/epcis-ontology.ttl> ;
                              terms:creator "George Baryannis" ,
-                                           "Lili Jia" ;
+                                           "Lili Jia" ,
+                                           "Emmanuel Papadakis" ;
                              terms:description "Ontology capturing knowledge related to food allergen management and traceability." ;
                              rdfs:label "Food Allergen Traceability Ontology (FATO)" ;
                              owl:versionInfo 1.0 .
